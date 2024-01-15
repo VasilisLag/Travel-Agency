@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        c:\Users\dai17\Downloads\favicon.png
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <link rel="stylesheet" href="../styles/entry.css">
+        <script src="../scripts/entry.js" defer></script>
+    </head>
+    <body>
+        <div class="general-container">
+            <header>
+                <h1>SkyTravel Agency</h1>
+            </header>
+            <div class="hello-text" id="user-text">Hello</div>
+            <div class="content-container">
+                <div class="trip-information">
+                    <h3>Καταχωρήστε νέα εκδρομή</h3>
+                    <div class="trip-element">
+                        <label for="" class="label">Τοποθεσία</label>
+                        <input type="text" class="" id="location">
+                    </div>
+                    <div class="trip-element">
+                        <label for="" class="">Περιγραφή</label>
+                        <textarea class="" id="description"></textarea>
+                    </div>
+                    <div class="trip-element dates">
+                        <label for="" class="date-picker" id="date-fly-label">Ημ/νία Αναχώρησης</label>
+                        <label for="" class="date-picker" id="date-ret-label">Ημ/νία Επιστροφής</label>
+                        <input type="date" class="date-picker" id="date-fly">
+                        <input type="date" class="date-picker" id="date-ret">
+                    </div>
+                    <div class="trip-element">
+                        <label for="" class="">Τόπος Αναχώρησης</label>
+                        <input type="text" class="" id="depLocation">
+                    </div>
+                    <div class="trip-element">
+                        <label for="" class="">Μέγιστη Χωρητικότητα</label>
+                        <input type="number" class="" id="capacity">
+                    </div>
+                    <div class="trip-element">
+                        <label for="" class="">Κόστος/Άτομο</label>
+                        <input type="number" class="" id="pricePerPerson">
+                    </div>
+                    <div class="trip-element">
+                        <button onclick="registerExcursion()" class="reserve-button">Καταχώρηση</button>
+                    </div>
+                    
+                </div>
+                <div class="trips-entered">
+                    <div class="card-title">Καταχωρημένες Εκδρομές</div>    
+                    <div class="agency-trips" id="total-trips">
+
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+       
+        
+
+    </body>
+</html>

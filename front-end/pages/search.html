@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency</title>
+        <link rel="stylesheet" href="../styles/search.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <script src="../scripts/search.js" defer></script>
+        
+    </head>
+    <body>
+        <div class="general-container">
+            <header>
+                <h1>SkyTravel Agency</h1>
+                <h4><div  id="user-text">Hello</div></h4>
+            </header>
+            <div class="filter-container">
+                <div class="search-bar">
+                    <button type="search" id="search-button" onclick="searchExcursion()">Αναζήτηση &#x1F50E</button>
+                </div>
+                <div id="reset-cont">
+                    <button type="button" id="reset-button" onclick="resetFilters()">Εκκαθάριση &#10006</button>
+                </div>
+                <select id="dep-dropdown" class="dropdown">
+                    <option value="" disabled selected style="display:none;">Τόπος Αναχώρησης</option>
+                </select>
+                <select id="arr-dropdown" class="dropdown">
+                    <option value="" disabled selected style="display:none;">Τόπος Άφιξης</option>
+                </select>
+                <select id="agency-dropdown" class="dropdown">
+                    <option value="" disabled selected style="display:none;">Ταξιδιωτικό Πρακτορείο</option>
+                </select>
+                <div class="date-picker-container">
+                    <label for="datepicker_fly" class="date-picker-label">Ημ/νία Αναχώρησης</label>
+                    <input type="date" class="date-picker" id="datepicker-fly">
+                </div>
+                <div class="date-picker-container">
+                    <label for="datepicker_ret" class="date-picker-label">Ημ/νία Επιστροφής</label>
+                    <input type="date" class="date-picker" id="datepicker-ret">
+                </div>
+                
+            </div>
+
+            <div id="smallerdevicesfilter">
+                <button class="filter-button" onclick="openFilterPopup()">Filter</button>
+                <div class="popup" id="filterPopup">
+                    <div class="popup-content">
+                        
+                        <div class="popup-filter-container">
+                          <h2>Filter</h2>
+                          <select id="dep-dropdown1" class="dropdown">
+                            <option value="" disabled selected style="display:none;">Τόπος Αναχώρησης</option>
+                        </select>
+                        <select id="arr-dropdown1" class="dropdown">
+                            <option value="" disabled selected style="display:none;">Τόπος Άφιξης</option>
+                        </select>
+                        <select id="agency-dropdown1" class="dropdown">
+                            <option value="" disabled selected style="display:none;">Ταξιδιωτικό Πρακτορείο</option>
+                        </select>
+                        <div class="date-picker-container">
+                            <label for="datepicker_fly" class="date-picker-label">Ημ/νία Αναχώρησης</label>
+                            <input type="date" class="date-picker" id="datepicker-fly1">
+                        </div>
+                        <div class="date-picker-container">
+                            <label for="datepicker_ret" class="date-picker-label">Ημ/νία Επιστροφής</label>
+                            <input type="date" class="date-picker" id="datepicker-ret1">
+                        </div>
+                            
+                            <div class="button-container">
+                                <div class="search-bar">
+                                    <button type="search" id="search-button2" onclick="searchExcursion()">Αναζήτηση &#x1F50E</button>
+                                </div>
+                                <div id="reset-cont">
+                                    <button type="button" id="reset-button" onclick="resetFilters()">Εκκαθάριση &#10006</button>
+                                </div>
+                                <button id="exit-button" onclick="closeFilterPopup()">Exit</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container" id="total-trips">
+                
+            </div>
+           
+            <button class="reserve-button" id="reserve-btn" onclick="getSelectedValue()">Κάντε Κράτηση</button>
+        </div>
+
+
+    </body>
+</html>

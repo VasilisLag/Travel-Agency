@@ -1,0 +1,78 @@
+body{
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden; 
+}
+
+#block {
+    width: 70%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(2px); 
+    text-align: center; 
+    padding-top: 5%;
+    margin-bottom: 3%;
+
+
+    @media (max-width: 600px) {
+        width: 70%;
+        height: 50%;
+      }
+
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+        width: 70%;
+        height: 40%;
+
+    }
+
+    @media (min-width: 1201px) {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+#block h1,
+#loginForm {
+    margin: 5px; /* Add some spacing around the elements */
+    margin-bottom: 10px;
+    font-size: 20px;;
+}
+
+#loginForm label {
+    display: block; /* Make labels block elements for better spacing */
+    margin-bottom: 5px;
+}
+
+#loginForm input,
+#loginForm button {
+    width: 50%; 
+    height: 30px;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+
+
+#loginForm button {
+    background-color: transparent;
+}
+
+#loginForm button:hover{
+    cursor: pointer;
+}
+
+
+

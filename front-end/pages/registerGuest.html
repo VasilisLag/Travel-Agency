@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sky Travel</title>
+        <link rel="stylesheet" type="text/css" href="../styles/register.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <script src="../scripts/registerCitizen.js" defer></script>
+    </head>
+    <body>
+        <div id="block">
+            <div id="content"> 
+                <h1>Εγγραφή Πελάτη</h1>
+
+                <form id="registerForm" onsubmit="submitForm(event)">
+                    <div>
+                        <label for="name">Όνομα </label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="surname">Επώνυμο</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    
+                    <div>
+                        <label for="afm">ΑΦΜ</label>
+                        <input type="number" id="afm" name="afm" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div>
+                        <label for="password">Κωδικός</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                
+                    <div>
+                        <label for="confirmPassword">Επανάληψη Κωδικού</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div>
+                        <label id="connection-problem"></label>
+                    </div>
+                    <button type="submit">Εγγραφή</button>
+                </form>
+                <div id="register">
+                    <span>Κάνε Εγγραφή ως Ταξιδιωτικό γραφείο </span><a href="registerTravel.html" id="registerTravel">εδώ</a>
+                </div>
+                <div>
+                    <span>Έχεις ήδη λογαριασμό; </span><a href="./login.html">Συνδέσου εδώ</a>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
+ 
